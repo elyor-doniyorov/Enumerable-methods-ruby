@@ -32,6 +32,7 @@ module Enumerable
     new_arr
   end
 
+  # rubocop:disable Metrics/PerceivedComplexity
   # rubocop:disable Metrics/CyclomaticComplexity
   def my_all?(param = nil)
     if block_given?
@@ -118,3 +119,5 @@ def multiply_els(array)
   array.my_inject(1) { |product, i| product * i }
 end
 # rubocop:enable Metrics/CyclomaticComplexity
+# rubocop:enable Metrics/PerceivedComplexity
+
