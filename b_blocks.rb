@@ -79,7 +79,7 @@ module Enumerable
   def my_count(param = nil)
     j = 0
     if block_given?
-      to_a.my_each { |item| c += 1 if yield(item) }
+      to_a.my_each { |item| j += 1 if yield(item) }
     elsif !block_given? && param.nil?
       j = to_a.length
     else
