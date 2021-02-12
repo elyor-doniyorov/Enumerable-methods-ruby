@@ -33,7 +33,7 @@ module Enumerable
     new_arr
   end
 
-  # my_all?
+  # rubocop:disable Metrics/CyclomaticComplexity
   def my_all?(param = nil)
     if block_given?
       to_a.my_each { |item| return false if yield(item) == false }
@@ -50,7 +50,7 @@ module Enumerable
     true
   end
 
-  # my_any?
+  # rubocop:disable Metrics/CyclomaticComplexity
   def my_any?(param = nil)
     if block_given?
       to_a.my_each { |item| return true if yield(item) }
