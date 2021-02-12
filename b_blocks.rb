@@ -1,5 +1,5 @@
 module Enumerable
-  #my_each
+  # my_each
   def my_each
     return to_enum(:my_each) unless block_given?
 
@@ -77,15 +77,15 @@ module Enumerable
 
   # my_count
   def my_count(param = nil)
-    c = 0
+    j = 0
     if block_given?
       to_a.my_each { |item| c += 1 if yield(item) }
     elsif !block_given? && param.nil?
-      c = to_a.length
+      j = to_a.length
     else
-      c = to_a.my_select { |item| item == param }.length
+      j = to_a.my_select { |item| item == param }.length
     end
-    c
+    j
   end
 
   # my_map
