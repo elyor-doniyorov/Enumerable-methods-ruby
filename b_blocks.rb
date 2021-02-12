@@ -113,6 +113,7 @@ module Enumerable
     reduce
   end
 end
+
 def multiply_els(array)
   array.my_inject(1) { |product, i| product * i }
 end
