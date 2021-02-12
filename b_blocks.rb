@@ -120,4 +120,3 @@ def multiply_els(array)
 end
 # rubocop:enable Metrics/CyclomaticComplexity
 # rubocop:enable Metrics/PerceivedComplexity
-
