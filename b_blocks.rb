@@ -1,3 +1,4 @@
+# rubocop:disable Metrics/CyclomaticComplexity
 module Enumerable
   # my_each
   def my_each
@@ -117,3 +118,4 @@ end
 def multiply_els(array)
   array.my_inject(1) { |product, i| product * i }
 end
+# rubocop:enable Metrics/CyclomaticComplexity
