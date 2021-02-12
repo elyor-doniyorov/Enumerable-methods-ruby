@@ -32,8 +32,7 @@ module Enumerable
     new_arr
   end
 
-  # rubocop:disable Metrics/PerceivedComplexity
-  # rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/PerceivedComplexity Metrics/CyclomaticComplexity 
   def my_all?(param = nil)
     if block_given?
       to_a.my_each { |item| return false if yield(item) == false }
@@ -118,5 +117,4 @@ end
 def multiply_els(array)
   array.my_inject(1) { |product, i| product * i }
 end
-# rubocop:enable Metrics/CyclomaticComplexity
-# rubocop:enable Metrics/PerceivedComplexity
+# rubocop:enable Metrics/PerceivedComplexity Metrics/CyclomaticComplexity
