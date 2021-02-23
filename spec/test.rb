@@ -92,4 +92,19 @@ describe Enumerable do
       expect(%w[ant bear car].my_none? { |word| word.length == 5 }).to eql(true)
     end
   end
+
+  describe '#my_inject' do
+    it 'sum of all numbers' do
+      expect((1..6).my_inject(:+)).to eql(21)
+    end
+    it 'multiply all numbers using blocks' do
+      expect((5..10).my_inject(1) { |x, n| x * n }).to eql(151_200)
+    end
+    it 'sum all using block' do
+      expect((1..6).my_inject { |x, n| x + n }).to eql(21)
+    end
+    it 'multiply all numbers' do
+      expect((5..10).my_inject(1, :*)).to eql(151_200)
+    end
+  end
 end
