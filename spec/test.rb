@@ -140,4 +140,10 @@ describe Enumerable do
       expect([9, 3, 4].count(2)).to eql([9, 3, 4].count(2))
     end
   end
+
+  describe '#my_map' do
+    it 'Returns the array adding the value of the yield' do
+      expect([4, 16, 1].my_map { |i| i * i }).to eql([4, 16, 1].map { |i| i * i })
+    end
+  end
 end
