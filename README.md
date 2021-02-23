@@ -9,7 +9,8 @@
 Additional description about the project and its features.
 
 ## Test
--run test by cd into spec file and use the command      rspec test.rb
+- in order to run test you have to install rspec in your cmd run $gem install rspec
+-run test by cd into spec file and use the command      rspec /test.rb
 
 ## Built With
 
@@ -36,15 +37,7 @@ Additional description about the project and its features.
 
 To get a local copy of the repository please run the following commands on your terminal:
 
-$ cd <folder>
 $ git clone https://github.com/EL28DEV/Enumerable-methods-ruby.git
-
-Testing
-To test the code, run rspec from root of the folder using terminal.
-
-    Rspec is used for the test.
-
-$ gem install rspec
 
 ## Show your support
 
