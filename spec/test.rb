@@ -1,34 +1,31 @@
-#spec/test.rb
+# spec/test.rb
 
-require_relative '../b_blocks.rb'
-
-
+require_relative '../b_blocks'
 
 describe Enumerable do
-    describe '#my_each' do
-      it 'return every value' do
-        expect([5, 1].my_each { |i| i }).to eql([5, 1])
-      end
-      it 'Returns true if contains only nils and false' do
-        expect([false, nil].my_none?).to eql(true)
-      end
-      it 'Returns true if contains only nils and false' do
-        expect([true, false, nil].my_none?).to eql(false)
-      end
-      it 'return true if there are floats' do
-        expect([21, 3, 4.32].my_none?(Float)).to eql(false)
-      end
-      it 'return true if word don t own letter' do
-        expect(%w[ant bear car].my_none?(/s/)).to eql(true)
-      end
-      it 'Returns true if array is empty' do
-        expect([].my_none?).to eql(true)
-      end
-      it 'Returns true if there are only nils' do
-        expect([nil].my_none?).to eql(true)
-      end
+  describe '#my_each' do
+    it 'return every value' do
+      expect([5, 1].my_each { |i| i }).to eql([5, 1])
     end
-  
+    it 'Returns true if contains only nils and false' do
+      expect([false, nil].my_none?).to eql(true)
+    end
+    it 'Returns true if contains only nils and false' do
+      expect([true, false, nil].my_none?).to eql(false)
+    end
+    it 'return true if there are floats' do
+      expect([21, 3, 4.32].my_none?(Float)).to eql(false)
+    end
+    it 'return true if word don t own letter' do
+      expect(%w[ant bear car].my_none?(/s/)).to eql(true)
+    end
+    it 'Returns true if array is empty' do
+      expect([].my_none?).to eql(true)
+    end
+    it 'Returns true if there are only nils' do
+      expect([nil].my_none?).to eql(true)
+    end
+  end
 
   describe '#my_each_with_index' do
     it 'return enum if no block' do
