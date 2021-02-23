@@ -8,9 +8,14 @@
 
 Additional description about the project and its features.
 
+## Test
+- in order to run test you have to install rspec in your cmd run $gem install rspec
+-run test by cd into spec file and use the command      rspec /test.rb
+
 ## Built With
 
 - Ruby-enumerable methods
+- Rspec
 
 ## Live Demo
 
@@ -24,23 +29,15 @@ Additional description about the project and its features.
 
 ## Authors
 
-- GitHub: [@uwadonat](https://github.com/uwadonat)
-- LinkedIn: [Donat](www.linkedIn.com/in/uwamahoro-donat-84b5bb1b7/)
-- Twitter: [@uwamahoroDonat](https://twitter.com/uwamahoroDonat)
+- GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
+- Twitter: [@twitterhandle](https://twitter.com/Fares09301164)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fares-ashraf-382a35176/)
 
 ## Getting Started
 
 To get a local copy of the repository please run the following commands on your terminal:
 
-$ cd <folder>
 $ git clone https://github.com/EL28DEV/Enumerable-methods-ruby.git
-
-Testing
-To test the code, run rspec from root of the folder using terminal.
-
-    Rspec is used for the test.
-
-$ gem install rspec
 
 ## Show your support
 
