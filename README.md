@@ -8,9 +8,13 @@
 
 Additional description about the project and its features.
 
+## Test
+-run test by cd into spec file and use the command      rspec test.rb
+
 ## Built With
 
 - Ruby-enumerable methods
+- Rspec
 
 ## Live Demo
 
@@ -24,9 +28,9 @@ Additional description about the project and its features.
 
 ## Authors
 
-- GitHub: [@uwadonat](https://github.com/uwadonat)
-- LinkedIn: [Donat](www.linkedIn.com/in/uwamahoro-donat-84b5bb1b7/)
-- Twitter: [@uwamahoroDonat](https://twitter.com/uwamahoroDonat)
+- GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
+- Twitter: [@twitterhandle](https://twitter.com/Fares09301164)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fares-ashraf-382a35176/)
 
 ## Getting Started
 
