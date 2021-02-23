@@ -128,4 +128,16 @@ describe Enumerable do
       expect([].my_all?).to eql(true)
     end
   end
+
+  describe '#my_count' do
+    it 'Returns the amount of values that are the same as the yield' do
+      expect([6, 32, 7].my_count(&:even?)).to eql([6, 32, 7].count(&:even?))
+    end
+    it 'Returns the amount of values in the array' do
+      expect([6, 32, 7].my_count).to eql([6, 32, 7].count)
+    end
+    it 'Returns the amount of values that are the same as the arg' do
+      expect([9, 3, 4].count(2)).to eql([9, 3, 4].count(2))
+    end
+  end
 end
