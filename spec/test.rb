@@ -28,6 +28,62 @@ describe Enumerable do
         expect([nil].my_none?).to eql(true)
       end
     end
+  
+    describe '#my_each_with_index' do
+      it 'return enum if no block' do
+        arr = [1, 2, 3, 4]
+        expect(arr.my_each_with_index).to be_a(Enumerator)
+      end
+  
+      it 'return array if block' do
+        arr = [1, 2, 3, 4]
+        expect(
+          arr.my_each_with_index do |x, i|
+          end
+        ).to eql(arr)
+      end
+  
+      it 'when empty enum no return nil' do
+        expect([].my_each_with_index).not_to eql(nil)
+      end
+  
+      it 'should return the sum of all indexes of the array ' do
+        arr = [1, 2, 3, 4]
+        total = 0
+        arr.my_each_with_index do |_x, i|
+          total += i
+        end
+        expect(total).to eql(6)
+      end
+    end
+
+     describe '#my_each_with_index' do
+    it 'return enum if no block' do
+      arr = [1, 2, 3, 4]
+      expect(arr.my_each_with_index).to be_a(Enumerator)
+    end
+
+    it 'return array if block' do
+      arr = [1, 2, 3, 4]
+      expect(
+        arr.my_each_with_index do |x, i|
+        end
+      ).to eql(arr)
+    end
+
+    it 'when empty enum no return nil' do
+      expect([].my_each_with_index).not_to eql(nil)
+    end
+
+    it 'should return the sum of all indexes of the array ' do
+      arr = [1, 2, 3, 4]
+      total = 0
+      arr.my_each_with_index do |_x, i|
+        total += i
+      end
+      expect(total).to eql(6)
+    end
+  end
 
   describe '#my_select' do
     it 'Returns just the even numers' do
