@@ -146,4 +146,15 @@ describe Enumerable do
       expect([4, 16, 1].my_map { |i| i * i }).to eql([4, 16, 1].map { |i| i * i })
     end
   end
+
+  describe '#multiply_els' do
+    it 'Returns the multiplication of all elements like in my_inject' do
+      expect(multiply_els([4, 16, 1])).to eql([4, 16, 1].inject { |a, b| a * b })
+    end
+    it 'get back the largest word' do
+      expect(%w[cat sheep bear].my_inject do |memo, word|
+               memo.length > word.length ? memo : word
+             end).to eql('sheep')
+    end
+  end
 end
