@@ -107,4 +107,25 @@ describe Enumerable do
       expect((5..10).my_inject(1, :*)).to eql(151_200)
     end
   end
+
+  describe '#my_all?' do
+    it 'Returns false as if the words are not greater than or equal to 4' do
+      expect(%w[ant bear car].my_all? { |word| word.length >= 4 }).to eql(false)
+    end
+    it 'Returns true if all inputs are numeric' do
+      expect([5, 2i, 32, 124].my_all?(Numeric)).to eql(true)
+    end
+    it 'Returns false if dont have s' do
+      expect(%w[ant bear car].my_all?(/s/)).to eql(false)
+    end
+    it 'Returns true if the words are greater than or equal to 3' do
+      expect(%w[ant bear car].my_all? { |word| word.length >= 3 }).to eql(true)
+    end
+    it 'Returns true if all inputs have a value of true' do
+      expect([true, nil, 99].my_all?).to eql(false)
+    end
+    it 'Returns true if array is empty' do
+      expect([].my_all?).to eql(true)
+    end
+  end
 end
