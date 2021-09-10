@@ -23,9 +23,9 @@ Additional description about the project and its features.
 
 ## Authors
 
-- GitHub: [@Elyor](https://github.com/EL28DEV)
-- LinkedIn: [Elyor](https://www.linkedin.com/feed/)
-- Twitter: [@elyor-doniyorov](https://twitter.com/home?lang=ru)
+- GitHub: [@elyor-doniyorov](https://github.com/elyor-doniyorov)
+- LinkedIn: [@elyor-doniyorov](https://www.linkedin.com/in/elyor-doniyorov/)
+- Twitter: [@elyor-doniyorov](https://twitter.com/elyor-doniyorov)
 
 ## Authors
 
@@ -37,7 +37,7 @@ Additional description about the project and its features.
 
 To get a local copy of the repository please run the following commands on your terminal:
 
-$ git clone https://github.com/EL28DEV/Enumerable-methods-ruby.git
+$ git clone https://github.com/elyor-doniyorov/Enumerable-methods-ruby.git
 
 ## Show your support
 
